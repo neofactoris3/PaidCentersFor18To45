@@ -42,7 +42,7 @@ def saveMeSomeTimeLoop():
                             for center in responseJson['centers']:
                                     #(center['pincode'] >= pincode0 and center['pincode'] <= pincode1) and )  :
                                     if ( center['fee_type'] == 'Paid') :
-                                            file1 = open("reportKottayam18To45.txt", "a")  # append mode
+                                            file1 = open("report18To45.txt", "a")  # append mode
                                             now = datetime.now()
                                             current_time = now.strftime("%H:%M:%S, %d/%m/%Y")
                                             print("{center} with pincode {pincode} which is {paid} available at {time}\n DETAILS:".format(center = center['name'], pincode = center['pincode'], time = current_time, paid = center['fee_type']))
@@ -57,7 +57,7 @@ def saveMeSomeTimeLoop():
                                             timeout  = 50
                                             )
                                     else :
-                                            file1 = open("reportKottayam18To45Kak.txt", "a")
+                                            file1 = open("report18To45Kak.txt", "a")
                                             now = datetime.now()
                                             current_time = now.strftime("%H:%M:%S, %d/%m/%Y")
                                             print("No paid centers for Kottayam, polled at ", current_time)
