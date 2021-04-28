@@ -1,5 +1,5 @@
 
-#pip install winnotify
+#pip install plyer
 import time
 import json
 from plyer import notification
